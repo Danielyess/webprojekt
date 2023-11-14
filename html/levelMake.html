@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szint készítő</title>
+</head>
+<body>
+    <a href ="startMenu.html"><h1>Vissza</h1></a>
+    <h2>Mindenben kell lennie dolognak</h2>
+
+    <form action="../php/levelMake.php" method="post">
+
+        <label for="start">Kiindulóérték (szám):</label><br>
+        <input type="text" id="start" name="start" required><br><br>
+
+        <label for="goal">Cél (szám):</label><br>
+        <input type="text" id="goal" name="goal" required><br><br>
+
+        <label for="steps">Lépések (szám):</label><br>
+        <input type="text" id="steps" name="steps" required><br><br>
+
+        <label for="appendbutton1">Hozzáfűző gombok(Értéket írd be ami szám v. azt hogy "null"):</label><br>
+        <input type="text" id="appendbutton1" name="appendbutton1" required><br>
+        <input type="text" id="appendbutton2" name="appendbutton2" required><br>
+        <input type="text" id="appendbutton3" name="appendbutton3" required><br>
+        <input type="text" id="appendbutton4" name="appendbutton4" required><br><br>
+
+        <label for="funkbutton1">Funkcionális gombok(Értéket (pl. /3,+2,-6,*5) v. "null"):</label><br>
+        <input type="text" id="funkbutton1" name="funkbutton1" required><br>
+        <input type="text" id="funkbutton2" name="funkbutton2" required><br>
+        <input type="text" id="funkbutton3" name="funkbutton3" required><br>
+        <input type="text" id="funkbutton4" name="funkbutton4" required><br><br>
+
+        <label for="reverse">Fordit (0 v. 1):</label>
+        <input type="text" id="reverse" name="reverse" required><br><br>
+
+        <label for="plusMinus">+/- (0 v. 1):</label>
+        <input type="text" id="plusMinus" name="plusMinus" required><br><br>
+
+        <label for="sum">SUM (0 v. 1):</label>
+        <input type="text" id="sum" name="sum" required><br><br>
+
+        <label for="backspace">Törlés (0 v. 1):</label>
+        <input type="text" id="backspace" name="backspace" required><br><br>
+
+        <input type="submit" value="MEHET">
+    </form>
+
+</body>
+</html>

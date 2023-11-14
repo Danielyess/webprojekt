@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <title>Számológépes játék</title>
+    <link rel="stylesheet" type="text/css" href="../css/jatek.css">
+    <meta charset="UTF-8">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.1.0/math.js"></script>
+</head>
+<body onload="loadLevel(level)">
+    <div class="calculator">
+        <input type="text" id="display" value="0">
+
+        <div class="buttons">
+            
+            <button class="button button_clr" id="button0" onclick="CLR()">CLR</button> <!--EZT NEM BANTJUK -->
+            
+            <button class="button" id="button1" onclick="appendNum(textContent)"></button>
+            
+            <button class="button" id="button2" onclick="numFunc(textContent)"></button>
+
+            <button class="button" id="button3"></button>
+
+            <button class="not_button"id="button4">Lépések:  </button> <!--EZT NEM BANTJUK -->
+            
+            <button class="button" id="button5" onclick="appendNum(textContent)"></button>
+            
+            <button class="button" id="button6" onclick="numFunc(textContent)"></button>
+            
+            <button class="button" id="button7"></button>
+            
+            <button class="not_button" id="button8">Cél: </button> <!--EZT NEM BANTJUK -->
+
+            <button class="button" id="button9" onclick="appendNum(textContent)"></button>
+            
+            <button class="button" id="button10" onclick="numFunc(textContent)"></button>
+            
+            <button class="button" id="button11"></button>
+            
+            <button class="not_button" id="button12">. szint</button> <!--EZT NEM BANTJUK -->
+            
+            <button class="button" id="button13" onclick="appendNum(textContent)"></button>
+            
+            <button class="button" id="button14" onclick="numFunc(textContent)"></button>
+
+            <button class="button" id="button15"></button>
+        </div>
+    </div>
+    <br>
+    <button id="perviouslevel" onclick="perviousLevel()">Előző szint</button>
+    <button id="nextlevel" onclick="nextLevel()">Következő szint</button>
+    <script src="../script/jatekScript.js"></script>
+</body>
+</html>
