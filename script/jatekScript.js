@@ -23,6 +23,9 @@ var numFuncBs="";
 var otherBs="";
 
 
+function mentes(){
+    window.location.href = "login.html?data=" + encodeURIComponent(level)
+}
 
 let button1 = document.getElementById("button1");
 let button5 = document.getElementById("button5");

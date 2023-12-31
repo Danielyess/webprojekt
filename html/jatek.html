@@ -4,10 +4,12 @@
     <title>Számológépes játék</title>
     <link rel="stylesheet" type="text/css" href="../css/jatek.css">
     <meta charset="UTF-8">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.1.0/math.js"></script>
 </head>
 <body onload="loadLevel(level)">
+    <button id="regi" onclick="window.location.assign('signup.html')">Felhasználó regisztrálása</button>
+    <button id ="login" onclick="mentes()">Bejelentkezés és mentés</button>
     <div class="calculator">
+    <br>
         <input type="text" id="display" value="0">
 
         <div class="buttons">

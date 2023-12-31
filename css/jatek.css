@@ -4,6 +4,20 @@ body {
     background-color: #4f7c95;
 }
 
+
+
+#regi{
+    margin-right: 17%;
+    height: 5em;
+    width: 17%;
+}
+
+#login{
+    margin-left: 17%;
+    height: 5em;
+    width: 17%;
+}
+
 .calculator {
     width: 50%;
     height: auto;
@@ -96,15 +110,6 @@ input[type="text"] {
     opacity: 80%;
 }
 
-
-#login, #signup{
-    color: yellow;
-}
-
-#signup{
-    width:10%;
-    margin-right: 80%;
-}
 /* 
 #perviousLevel, #nextLevel{
 

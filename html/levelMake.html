@@ -5,43 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Szint készítő</title>
 </head>
-<body>
+<body>  
+    
     <a href ="startMenu.html"><h1>Vissza</h1></a>
-    <h2>Mindenben kell lennie dolognak</h2>
-
+    <h2>Minden mezőt ki kell tölteni</h2>
+    <h2 style="color: red;">CSAK OLYAN SZINTET CSINÁLJ AMIT MEG IS LEHET OLDANI</h2>    
     <form action="../php/levelMake.php" method="post">
-
-        <label for="start">Kiindulóérték (szám):</label><br>
+        <label for="start">Kiindulóérték (szám):<img src="../images/tip.png" class ="image" style="width: 1em;" title="A kiindulóérték amit megad az lesz a szamológép képernyőjén amikor betölt a szint."></label><br>
         <input type="text" id="start" name="start" required><br><br>
 
-        <label for="goal">Cél (szám):</label><br>
+        <label for="goal">Cél (szám):<img src="../images/tip.png" class ="image" style="width: 1em;" title="Ezt az értéket kell elérnie a felhasználónak VIGYÁZZ mert nem vizsgálja a rendszer hogy a szint teljesithető-e."></label><br>
         <input type="text" id="goal" name="goal" required><br><br>
 
-        <label for="steps">Lépések (szám):</label><br>
+        <label for="steps">Lépések (szám):<img src="../images/tip.png" class ="image" style="width: 1em;" title="Ez a szám fogja megmondani hogy mennyi lépésből lehet teljesíteni a szintet (nagyobb legyen mint 0!!!)."></label><br>
         <input type="text" id="steps" name="steps" required><br><br>
 
-        <label for="appendbutton1">Hozzáfűző gombok(Értéket írd be ami szám v. azt hogy "null"):</label><br>
+        <label for="appendbutton1">Hozzáfűző gombok(Értéket írd be ami szám v. azt hogy "null"):<img src="../images/tip.png" class ="image" style="width: 1em;" title="Ezek gombokat fognak letrehozni ahol nem 'null' érték van (csak sima számokat!! nagyobb mint -1 és nem tört)"></label><br>
         <input type="text" id="appendbutton1" name="appendbutton1" required><br>
         <input type="text" id="appendbutton2" name="appendbutton2" required><br>
         <input type="text" id="appendbutton3" name="appendbutton3" required><br>
         <input type="text" id="appendbutton4" name="appendbutton4" required><br><br>
 
-        <label for="funkbutton1">Funkcionális gombok(Értéket (pl. /3,+2,-6,*5) v. "null"):</label><br>
+        <label for="funkbutton1">Funkcionális gombok(Értéket (pl. /3,+2,-6,*5) v. "null"):<img src="../images/tip.png" class ="image" style="width: 1em;" title="Ezek fognak gombokat létrhozni amelyek a számológépen lévő értéket fogják valamilyen módon megváltoztatni (valamilyen műveleti jel utána egy szám) "></label><br>
         <input type="text" id="funkbutton1" name="funkbutton1" required><br>
         <input type="text" id="funkbutton2" name="funkbutton2" required><br>
         <input type="text" id="funkbutton3" name="funkbutton3" required><br>
         <input type="text" id="funkbutton4" name="funkbutton4" required><br><br>
 
-        <label for="reverse">Fordit (0 v. 1):</label>
+        <label for="reverse">Fordit (0 v. 1): <img src="../images/tip.png" class ="image" style="width: 1em;" title="Egy gombot jelenít meg amivel a felhasználó megfordíthatja a számot (1 ha kell 0 ha nem kell a gomb)"></label>
         <input type="text" id="reverse" name="reverse" required><br><br>
 
-        <label for="plusMinus">+/- (0 v. 1):</label>
+        <label for="plusMinus">+/- (0 v. 1): <img src="../images/tip.png" class ="image" style="width: 1em;" title="Egy gombot jelenít meg amivel a felhasználó minuszt csinálhat a számból(1 ha kell 0 ha nem kell a gomb)"></label>
         <input type="text" id="plusMinus" name="plusMinus" required><br><br>
 
-        <label for="sum">SUM (0 v. 1):</label>
+        <label for="sum">SUM (0 v. 1):<img src="../images/tip.png" class ="image" style="width: 1em;" title="Egy gombot jelenít meg amivel a felhasználó összeadhatja a szám számjegyeit(1 ha kell 0 ha nem kell a gomb)"></label>
         <input type="text" id="sum" name="sum" required><br><br>
 
-        <label for="backspace">Törlés (0 v. 1):</label>
+        <label for="backspace">Törlés (0 v. 1): <img src="../images/tip.png" class ="image" style="width: 1em;" title="Egy gombot jelenít meg amivel a felhasználó törölhet 1 karaktert a szám bal oldaláról (1 ha kell 0 ha nem kell a gomb)"></label>
         <input type="text" id="backspace" name="backspace" required><br><br>
 
         <input type="submit" value="MEHET">
